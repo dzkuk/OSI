@@ -21,6 +21,8 @@ int main()
         printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
         break;
     case '/':
+	if (second==0) printf("EROR: Divide with zero is not possible!");
+	else
         printf("%.1lf / %.1lf = %.1lf", first, second, first / second);
         break;
     default:
